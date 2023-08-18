@@ -4,9 +4,10 @@ namespace App\Repositories;
 
 use App\Jobs\LoginSMSJob;
 use App\Jobs\LogoutSMSJob;
+use App\Repositories\Interfaces\SMSRepositoryInterface;
 use Illuminate\Support\Facades\Log;
 
-class SMSRepository
+class SMSRepository implements SMSRepositoryInterface
 {
     public function loginSMS()
     {
